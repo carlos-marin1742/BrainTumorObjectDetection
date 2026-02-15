@@ -1,0 +1,26 @@
+{
+  "name": "braintumordetectionyolo",
+  "version": "1.0.0",
+  "description": "Brain Tumor MRI Detection using YOLO",
+  "keywords": [
+    "YOLO",
+    "node.js",
+    "Python",
+    "Ultralytics"
+  ],
+  "homepage": "https://github.com/carlos-marin1742/BrainTumorObjectDetection#readme",
+  "bugs": {
+    "url": "https://github.com/carlos-marin1742/BrainTumorObjectDetection/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlos-marin1742/BrainTumorObjectDetection.git"
+  },
+  "license": "ISC",
+  "author": "Carlos Marin",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
