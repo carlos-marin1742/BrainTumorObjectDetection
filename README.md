@@ -41,7 +41,7 @@ source brain_tumor_env/bin/activate  # On Mac/Linux
 # brain_tumor_env\Scripts\activate   # On Windows
 
 # Install dependencies
-pip install -r requirements/txt
+pip install -r requirements.txt
 ```
 3. **Set Up The Backend**
 ```bash
