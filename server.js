@@ -5,7 +5,7 @@ const multer = require('multer');
 const { spawn } = require('child_process');
 const cors = require('cors');
 
-app.use(cors());
+
 // 1. Configure storage to keep extensions
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -23,7 +23,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 const app = express();
-
+app.use(cors());
 app.post('/analyze-mri', upload.single('mri-image'), (req, res) => {
     if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
     const imagePath = req.file.path;
