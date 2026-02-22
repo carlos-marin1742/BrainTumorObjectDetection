@@ -3,7 +3,9 @@ const path = require('path');
 const fs = require('fs');
 const multer = require('multer');
 const { spawn } = require('child_process');
+const cors = require('cors');
 
+app.use(cors());
 // 1. Configure storage to keep extensions
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
